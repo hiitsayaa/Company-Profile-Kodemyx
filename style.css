@@ -1,0 +1,82 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.55); /* semi-transparent dark overlay */
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.stat-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  padding: 24px 0;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.benefit-card {
+  border: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s;
+}
+.benefit-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  position: relative;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.service-card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  transform: translateY(-6px) scale(1.02);
+}
+.service-number {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e0e7ff;
+  z-index: 1;
+}
+.blog-card img {
+  height: 180px;
+  object-fit: cover;
+}
+.cta-section {
+  background: linear-gradient(120deg, #6366f1 60%, #818cf8 100%);
+}
+.footer-section {
+  font-size: 0.95rem;
+}
+.footer-section a:hover {
+  color: #fff !important;
+}
+@media (max-width: 767px) {
+  .hero-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .stat-box {
+    margin-bottom: 24px;
+  }
+}
